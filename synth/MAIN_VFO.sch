@@ -2,9 +2,9 @@ EESchema Schematic File Version 4
 LIBS:synth-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -14,78 +14,4 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR?
-U 1 1 5E4A0672
-P 8075 4525
-F 0 "#PWR?" H 8075 4275 50  0001 C CNN
-F 1 "GND" H 8080 4352 50  0000 C CNN
-F 2 "" H 8075 4525 50  0001 C CNN
-F 3 "" H 8075 4525 50  0001 C CNN
-	1    8075 4525
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom:VDD_BAT #PWR?
-U 1 1 5E4A0678
-P 7075 3625
-F 0 "#PWR?" H 7275 3675 50  0001 C CNN
-F 1 "VDD_BAT" H 7080 3798 50  0000 C CNN
-F 2 "" H 7075 3625 50  0001 C CNN
-F 3 "" H 7075 3625 50  0001 C CNN
-	1    7075 3625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7075 3625 7075 3750
-Wire Wire Line
-	7075 3750 7175 3750
-Wire Wire Line
-	8075 4525 8075 4350
-Wire Wire Line
-	8075 4350 7975 4350
-$Comp
-L custom:SE555P U?
-U 1 1 5E4A0682
-P 7575 4250
-F 0 "U?" H 7575 5017 50  0000 C CNN
-F 1 "SE555P" H 7575 4926 50  0000 C CNN
-F 2 "" H 7575 4250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 7575 4250 50  0001 C CNN
-	1    7575 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom:LM358P U?
-U 1 1 5E4A0689
-P 4200 2775
-F 0 "U?" H 4200 3142 50  0000 C CNN
-F 1 "LM358P" H 4200 3051 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4200 2225 50  0001 C CNN
-F 3 "~/dj/datasheets/LM358P.pdf" H 4200 2325 50  0001 C CNN
-	1    4200 2775
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom:LM358P U?
-U 2 1 5E4A0690
-P 4100 3475
-F 0 "U?" H 4100 3842 50  0000 C CNN
-F 1 "LM358P" H 4100 3751 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4100 2925 50  0001 C CNN
-F 3 "~/dj/datasheets/LM358P.pdf" H 4100 3025 50  0001 C CNN
-	2    4100 3475
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom:LM358P U?
-U 3 1 5E4A0697
-P 3750 4050
-F 0 "U?" H 3980 4096 50  0000 L CNN
-F 1 "LM358P" H 3980 4005 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3750 3500 50  0001 C CNN
-F 3 "~/dj/datasheets/LM358P.pdf" H 3750 3600 50  0001 C CNN
-	3    3750 4050
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
